@@ -1,7 +1,7 @@
 /*
 Kvar att göra
 
-10 chassin
+
 10 grafikkort
 10 moderkort
 10 nätaggregat
