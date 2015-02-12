@@ -108,3 +108,28 @@ INSERT INTO `computercases` VALUES ('7', 'Zalman Z12 black','ATX/mATX','21.5','4
 INSERT INTO `computercases` VALUES ('8', 'Silverstone Temjin TJ08B-E black','mATX/mITX/Mini-DTX','21','37.4','38.5','16.5','33.6');
 INSERT INTO `computercases` VALUES ('9', 'Cooler Master Storm trooper','ATX/mATX/XL-ATX','25','57.9','60.6','18.6','32.2');
 INSERT INTO `computercases` VALUES ('10', 'Antec GX500','ATX/mATX/mITX','20.5','47.6','45.8','15.8','38');
+
+
+DROP TABLE IF EXISTS `GPU`;
+CREATE TABLE `GPU` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` int(11) NOT NULL DEFAULT '',
+  `unit` enum() NOT NULL DEFAULT ,
+   enum() NOT NULL DEFAULT ',
+   int(11) NOT NULL,
+  int(11) NOT NULL,
+   int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=901 DEFAULT utf8;
+
+INSERT INTO `GPU` VALUES ('1','Gigabyte Geforce GTX 970 G1' );
+INSERT INTO `GPU` VALUES ('2', 'ASUS Radeon r9 280 3GB DirectCUII TOP');
+INSERT INTO `GPU` VALUES ('3','ASUS Geforce GTX 750Ti 2GB PH');
+INSERT INTO `GPU` VALUES ('4','ASUS Geforce ROG MATRIX 980');
+INSERT INTO `GPU` VALUES ('5','Zotac Geforce GTX 960 AMP! 2GB');
+INSERT INTO `GPU` VALUES ('6','XFX Radeon 285 2GB');
+INSERT INTO `GPU` VALUES ('7',' MSI Geforce GTX TITAN black');
+INSERT INTO `GPU` VALUES ('8','Gigabyte Geforce GTX 780Ti Windforce');
+INSERT INTO `GPU` VALUES ('9',' EVGA Geforce GTX 750 1GB SC');
+INSERT INTO `GPU` VALUES ('10',' MSI Radeon r7 250 2GB OC (Oland X)');
+
