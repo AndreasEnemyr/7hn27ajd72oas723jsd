@@ -114,10 +114,10 @@ DROP TABLE IF EXISTS `GPU`;
 CREATE TABLE `GPU` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` int(11) NOT NULL DEFAULT '',
-  `unit` enum() NOT NULL DEFAULT ,
-   enum() NOT NULL DEFAULT ',
+  `width cm` int(11) NOT NULL
+  `height cm` int(11) NOT NULL
+  `depth cm`  int (11) NOT NULL
    int(11) NOT NULL,
-  int(11) NOT NULL,
    int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=901 DEFAULT utf8;
