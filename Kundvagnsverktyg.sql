@@ -85,3 +85,28 @@ INSERT INTO `processor` VALUES ('7','AMD FX-6300 Black Edition','6','6','AM3+','
 INSERT INTO `processor` VALUES ('8','AMD FX-8350 Black Edition','8','8','AM3+','125W');
 INSERT INTO `processor` VALUES ('9','AMD Athlon X4 860k Black Edition','4','4','FM2+','95W');
 INSERT INTO `processor` VALUES ('10','AMD A8-6600K Black Edition','4','4','FM2','100W');
+
+
+DROP TABLE IF EXISTS ` computercases`;
+CREATE TABLE `computercases` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+` name` int(11) NOT Null DEFAULT'',
+ `formfactor` enum('missing', 'ATX','mATX','mITX','eATX','FlexATX','mini-DTX','XL-ATX','HPTX','SSI-CEB','SSI-EEB') NOT NULL DEFAULT 'missing'
+ `width cm` int(11) NOT NULL
+ `height cm` int(11) NOT NULL
+ `depth cm`  int (11) NOT NULL
+ `maxcpu cm`  int (11) NOT NULL
+ `maxgpu cm`  int (11) NOT NULL
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=901 DEFAULT=utf8;
+
+INSERT INTO `computercases` VALUES ('1', 'Fractal Design define r4 Black','ATX/mATX/mITX','23.2','46.4','52.3','missing','missing');
+INSERT INTO `computercases` VALUES ('2', 'NZXT H440 Silent ultra white','ATX/mATX/mITX','22','47.53','51','18','29.4');
+INSERT INTO `computercases` VALUES ('3', 'Be quiet! Silent Base 800 black','ATX/mATX/mITX','26.6','55.9','49.5','17','29');
+INSERT INTO `computercases` VALUES ('4', 'Bitfenix Neos White','ATX/mATX/mITX','18.5','42.9','47','155','missing');
+INSERT INTO `computercases` VALUES ('5', 'Corsair obsidian 750D','ATX/mATX''mITX/E-ATX/XL-ATX/HPTX','54.6','55.9','23.6','17','45');
+INSERT INTO `computercases` VALUES ('6', 'Phanteks Enthoo Luxe white','ATX/mATX/E-ATX/SSI-EEB','23.5','56','55','19.3','34.7');
+INSERT INTO `computercases` VALUES ('7', 'Zalman Z12 black','ATX/mATX','21.5','47','48','missing','29');
+INSERT INTO `computercases` VALUES ('8', 'Silverstone Temjin TJ08B-E black','mATX/mITX/Mini-DTX','21','37.4','38.5','16.5','33.6');
+INSERT INTO `computercases` VALUES ('9', 'Cooler Master Storm trooper','ATX/mATX/XL-ATX','25','57.9','60.6','18.6','32.2');
+INSERT INTO `computercases` VALUES ('10', 'Antec GX500','ATX/mATX/mITX','20.5','47.6','45.8','15.8','38');
