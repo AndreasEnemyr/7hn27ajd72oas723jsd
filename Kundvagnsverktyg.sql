@@ -16,7 +16,7 @@ CREATE TABLE `hard drive` (
   `form factor` enum('missing','2.5"','3.5"') NOT NULL DEFAULT 'missing',
   `width mm` int(11) NOT NULL,
   `depth mm` int(11) NOT NULL,
-  `heigh mm` int(11) NOT NULL,
+  `height mm` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=901 DEFAULT utf8;
 
@@ -42,7 +42,7 @@ CREATE TABLE `ram` (
   `size` int(11) NOT NULL DEFAULT '1',
   `amount` int(11) NOT NULL DEFAULT '1',
   `technology` enum('missing','DDR3','DDR4') NOT NULL DEFAULT 'missing',
-  `heigh inch` varchar(100) NOT NULL,
+  `height inch` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=901 DEFAULT utf8;
 
@@ -66,7 +66,7 @@ CREATE TABLE `processor` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` int(11) NOT NULL DEFAULT '',
   `cores` varchar(100) NOT NULL,
-  `theards` int(11) NOT NULL DEFAULT '',
+  `threads` int(11) NOT NULL DEFAULT '',
   `power` int(11) NOT NULL DEFAULT '',
   `sockel` enum('missing','AM1','AM1+','AM2','AM2+','AM3','AM3+','FM2','FM2+','LGA775','LGA1150','LGA1155','LGA2011','LGA2011-v3') NOT NULL DEFAULT 'saknas',
   PRIMARY KEY (`id`)
