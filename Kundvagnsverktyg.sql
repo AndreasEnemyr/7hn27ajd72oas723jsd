@@ -1,6 +1,5 @@
 /*
 Kvar att göra
-10 grafikkort
 10 moderkort
 10 nätaggregat
 10 kylare
@@ -117,19 +116,17 @@ CREATE TABLE `GPU` (
   `width cm` int(11) NOT NULL
   `height cm` int(11) NOT NULL
   `depth cm`  int (11) NOT NULL
-   int(11) NOT NULL,
-   int(11) NOT NULL,
+  `power`  int (11) NOT NULL
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=901 DEFAULT utf8;
 
-INSERT INTO `GPU` VALUES ('1','Gigabyte Geforce GTX 970 G1' );
-INSERT INTO `GPU` VALUES ('2', 'ASUS Radeon r9 280 3GB DirectCUII TOP');
-INSERT INTO `GPU` VALUES ('3','ASUS Geforce GTX 750Ti 2GB PH');
-INSERT INTO `GPU` VALUES ('4','ASUS Geforce ROG MATRIX 980');
-INSERT INTO `GPU` VALUES ('5','Zotac Geforce GTX 960 AMP! 2GB');
-INSERT INTO `GPU` VALUES ('6','XFX Radeon 285 2GB');
-INSERT INTO `GPU` VALUES ('7',' MSI Geforce GTX TITAN black');
-INSERT INTO `GPU` VALUES ('8','Gigabyte Geforce GTX 780Ti Windforce');
-INSERT INTO `GPU` VALUES ('9',' EVGA Geforce GTX 750 1GB SC');
-INSERT INTO `GPU` VALUES ('10',' MSI Radeon r7 250 2GB OC (Oland X)');
-
+INSERT INTO `GPU` VALUES ('1','Gigabyte Geforce GTX 970 G1','4.3','12.9','31.2','550W');
+INSERT INTO `GPU` VALUES ('2', 'ASUS Radeon r9 280 3GB DirectCUII TOP','missing','missing','missing','600W');
+INSERT INTO `GPU` VALUES ('3','ASUS GeForce GTX 750Ti 2GB PhysX CUDA','3.9','11.5','18.2','missing');
+INSERT INTO `GPU` VALUES ('4','ASUS Geforce ROG MATRIX 980','missing','missing','missing','missing');
+INSERT INTO `GPU` VALUES ('5','ZOTAC GeForce GTX 960 AMP! 2GB','missing','missing','missing','500W');
+INSERT INTO `GPU` VALUES ('6','Sapphire Radeon R9 285 2GB GDDR5','3.4','11.3','26.4','500W');
+INSERT INTO `GPU` VALUES ('7',' MSI Geforce GTX TITAN black','missing','missing','missing','700W');
+INSERT INTO `GPU` VALUES ('8','Gigabyte GeForce GTX 750 Ti 2GB OC','missing','missing','missing','400W');
+INSERT INTO `GPU` VALUES ('9',' EVGA Geforce GTX 750 1GB SC','missing','missing','missing','500W');
+INSERT INTO `GPU` VALUES ('10',' MSI Radeon r7 250 2GB OC (Oland X)','missing','missing','missing','missing');
