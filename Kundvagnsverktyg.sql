@@ -1,10 +1,15 @@
 /*
 Kvar att göra
-10 moderkort
+10 moderkort (KLAR)
 10 nätaggregat
 10 kylare
-
+10 hårddiskar (KLAR)
+10 ramminnen (KLAR)
+10 chassin (KLAR)
+10 processorer (KLAR)
+10 grafikkort (KLAR)
 */
+
 
 
 
@@ -130,3 +135,28 @@ INSERT INTO `GPU` VALUES ('7',' MSI Geforce GTX TITAN black','missing','missing'
 INSERT INTO `GPU` VALUES ('8','Gigabyte GeForce GTX 750 Ti 2GB OC','missing','missing','missing','400W');
 INSERT INTO `GPU` VALUES ('9',' EVGA Geforce GTX 750 1GB SC','missing','missing','missing','500W');
 INSERT INTO `GPU` VALUES ('10',' MSI Radeon r7 250 2GB OC (Oland X)','missing','missing','missing','missing');
+
+
+DROP TABLE IF EXISTS `motherboard`;
+CREATE TABLE `motherboard` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` int(11) NOT NULL DEFAULT '',
+  `formfactor` enum('missing', 'ATX','mATX','mITX','XL-ATX','E-ATX') NOT NULL DEFAULT 'missing'
+  `sockel` enum('missing','AM1','AM1+','AM2','AM2+','AM3','AM3+','FM2','FM2+','LGA775','LGA1150','LGA1155','LGA2011','LGA2011-v3') NOT NULL DEFAULT 'missing',
+  `ram` int(11) NOT NULL
+  `width cm`  int (11) NOT NULL
+  `depth cm` int(11) NOT NULL
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=901 DEFAULT CHARSET=utf8;
+
+INSERT INTO `motherboard` VALUES ('1','Asus Rampage V Extreme','E-ATX','LGA2011-v3','DDR4','30.5','27.2');
+INSERT INTO `motherboard` VALUES ('2','MSI Z97 GAMING 5','ATX','LGA1150','DDR3','30.5','24.4');
+INSERT INTO `motherboard` VALUES ('3','ASUS X99-DELUXE','ATX','LGA2011-v3','DDR4','30.5','24.4');
+INSERT INTO `motherboard` VALUES ('4','MSI X99S GAMING 7','ATX','LGA2011-v3','DDR4','30.5','24.4');
+INSERT INTO `motherboard` VALUES ('5','ASUS Z97-E (White box)','ATX','LGA1150','DDR3','30.5','21.8');
+INSERT INTO `motherboard` VALUES ('6','Gigabyte GA-F2A78M-D3H','mATX','FM2+','DDR3','24.4','24.4');
+INSERT INTO `motherboard` VALUES ('7','ASUS Sabertooth 990FX R2.0','ATX','AM3+','DDR3','30.5','24.4');
+INSERT INTO `motherboard` VALUES ('8','ASUS Crosshair V Formula-Z','ATX','AM3+','DDR3','30.5','24.4');
+INSERT INTO `motherboard` VALUES ('9','ASUS AM1I-A','mITX','AM1','DDR3','17','17');
+INSERT INTO `motherboard` VALUES ('10','MSI 970 GAMING','ATX','AM3+','DDR3','30.5','24.4');
+
