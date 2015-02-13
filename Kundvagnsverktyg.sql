@@ -12,8 +12,8 @@ DROP TABLE IF EXISTS `hard drive`;
 CREATE TABLE `hard drive` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` int(11) NOT NULL DEFAULT '',
-  `unit` enum('saknas','SSD','HDD','HDD+SSD') NOT NULL DEFAULT 'saknas',
-  `form factor` enum('saknas','2.5"','3.5"') NOT NULL DEFAULT 'saknas',
+  `unit` enum('missing','SSD','HDD','HDD+SSD') NOT NULL DEFAULT 'missing',
+  `form factor` enum('missing','2.5"','3.5"') NOT NULL DEFAULT 'missing',
   `width mm` int(11) NOT NULL,
   `depth mm` int(11) NOT NULL,
   `heigh mm` int(11) NOT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE `ram` (
   `total size` varchar(100) NOT NULL,
   `size` int(11) NOT NULL DEFAULT '1',
   `amount` int(11) NOT NULL DEFAULT '1',
-  `technology` enum('saknas','DDR3','DDR4') NOT NULL DEFAULT 'saknas',
+  `technology` enum('missing','DDR3','DDR4') NOT NULL DEFAULT 'missing',
   `heigh inch` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=901 DEFAULT utf8;
