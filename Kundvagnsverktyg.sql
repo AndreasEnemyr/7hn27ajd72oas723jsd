@@ -2,7 +2,7 @@
 Kvar att göra
 10 moderkort (KLAR)
 10 nätaggregat
-10 kylare
+10 kylare (KLAR)
 10 hårddiskar (KLAR)
 10 ramminnen (KLAR)
 10 chassin (KLAR)
