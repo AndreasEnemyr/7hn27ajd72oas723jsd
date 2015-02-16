@@ -1,7 +1,7 @@
 /*
 Kvar att göra
 10 moderkort (KLAR)
-10 nätaggregat
+10 nätaggregat (Halvklar)
 10 kylare (KLAR)
 10 hårddiskar (KLAR)
 10 ramminnen (KLAR)
@@ -179,3 +179,35 @@ INSERT INTO `ram` (`id`, `name`, `total size`, `size`, `amount`, `technology`, `
 (8, 'HyperX Predator', '16GB', '4GB', 4, 'DDR4', 2),
 (9, 'Corsair Vengeance', '16GB', '4GB', 4, 'DDR4', NULL),
 (10, 'Corsair Vengeance', '8GB', '4GB', 2, 'DDR3', NULL);
+
+
+
+/*
+Jag har förberett lite för sista kategorin men som ni ser så saknas det värden och liknande så den som ser detta var snäll och lägg till  och sen radera den här kommentaren
+*/
+
+CREATE TABLE IF NOT EXISTS `PSU` (
+`id` int(11) NOT NULL,
+  `name´ varchar(100) NOT NULL DEFAULT '',
+  varchar(100) DEFAULT NULL,
+   varchar(100) DEFAULT NULL,
+   int(11) DEFAULT NULL,
+  ` enum( DEFAULT NULL,                  
+  (11) DEFAULT NULL
+) ENGINE=MyISAM AUTO_INCREMENT=901 DEFAULT CHARSET=utf8;
+
+
+
+
+INSERT INTO `PSU` 
+
+(1, 'Be quiet! Dark power Pro10 1200W 80+ Gold modular',
+(2, 'Coolermaster B2 500w',
+(3, 'Corsair CX 850M 80+ Bronze Modular'
+(4,'Fractal Design Integra M 550W 80+ Bronze modular'
+(5,'Seasonic Platinum 1050W XP3'
+(6,'EVGA Supernova G2 1300W, 80+ Gold, Modular'
+(7,'Silverstone ST30SF 300W SFX 80+Bronze'
+(8,'XFX Pro Series 650W 80+ Bronze'
+(9,'FSP Hyper 700W'
+(10,'Super Flower Leadex 1300W 80+ Gold, modulär'
